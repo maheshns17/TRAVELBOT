@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.pmaptechnotech.travelbot.activities.StateAndLanguageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/state_and_language_selection_dropdown"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:padding="8dp"
+            android:background="#4472c4"
+            android:textStyle="bold|normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:background="#4472c4"
+            android:textColor="#ffffff"
+            android:id="@+id/txt_state"
+            android:gravity="center"
+            android:textStyle="bold|normal"
+            android:text="@string/select_state" />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/select_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:background="#4472c4"
+            android:textColor="#ffffff"
+            android:id="@+id/txt_language"
+            android:gravity="center"
+            android:textStyle="bold|normal"
+            android:text="@string/select_language" />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/select_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textSize="15sp"/>
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:text="@string/continue_"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:textColor="#000000"
+            android:textStyle="bold|normal"
+            android:textSize="20dp"
+            android:background="#d2ddf0" />
+
+        <include layout="@layout/speech_layout" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

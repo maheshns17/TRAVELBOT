@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.pmaptechnotech.travelbot.activities.UserRegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4675c7"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/register_page"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold|normal" />
+
+        <EditText
+            android:id="@+id/edt_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/border"
+            android:hint="@string/name"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edt_Email_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/border"
+            android:hint="@string/email_id"
+            android:visibility="gone"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edt_Mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/border"
+            android:hint="@string/mobile"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edt_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/border"
+            android:hint="@string/password"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_skip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="#d2ddf0"
+            android:text="@string/skip"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold|normal" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="#d2ddf0"
+            android:text="@string/register"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold|normal" />
+        <include layout="@layout/speech_layout" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
